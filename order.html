@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="libs/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+  <link rel="stylesheet" href="libs/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <body><!--[if lt IE 9]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page">
+      <div class="main-header mb-0 mb-md-2">
+        <div class="top-panel">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto"><a class="btn btn-primary" href="#"> <i class="fa"></i><span>Акции и скидки</span></a></div>
+              <div class="col">
+                <ul class="top-contacts">
+                  <li class="top-contacts__item"><a class="top-contacts__link text-s" href="mailto: info@pirotech.ru"><i class="fa"></i><span>info@pirotech.ru</span></a></li>
+                  <li class="top-contacts__item"><a class="top-contacts__link" href="tel: +7(4832)22-28-22"> <i class="fa"></i><span>+7 (4832) 22-28-22</span></a></li>
+                </ul>
+              </div>
+              <div class="col-auto"><a class="fancybox btn btn-secondary-light" href="#callbackForm">Заказать звонок</a></div>
+              <div class="col">
+                <ul class="top-nav">
+                  <li class="top-nav__item"><a class="top-nav__link" href="#"> <i class="fa"></i><span>Доставка и оплата</span></a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#"> <i class="fa"></i><span>Безопасность</span></a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="top-auth"><a class="top-auth__item" href="#"> <i class="fa fa-sign-out-alt"></i><span>Вход</span></a><a class="fancybox top-auth__item btn btn-primary" href="#registerForm"> <i class="fa"></i><span>Регистрация</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-header__bottom">
+          <div class="container">
+            <div class="row justify-content-between align-items-center align-items-center">
+              <div class="col-auto"><a class="main-logo" href="/"><img src="img/logo.png" alt=""></a></div>
+              <div class="col col-lg-9">
+                <div class="row justify-content-end justify-content-md-between align-items-center">
+                  <div class="col-auto flex align-items-center">
+                    <div class="header-search">
+                      <input class="header-search__input" type="text" placeholder="Поиск...">
+                      <button class="header-search__submit fa" type="submit"></button>
+                    </div>
+                  </div>
+                  <div class="col-auto flex align-items-center">
+                    <ul class="header-nav">
+                      <li class="header-nav__item js-hover" data-target=".header-nav-drop"><a class="header-nav__link" href="#">Каталог</a>
+                        <ul class="header-nav-drop">
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Батареи салютов</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Бенгальские огни</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Комбинированные салюты</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Наземные фейерверки</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Одиночные салюты</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Петарды</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Ракеты</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Римские свечи</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Фонтаны</a></li>
+                          <li class="header-nav-drop__item"><a class="header-nav-drop__link" href="#">Хлопушки</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-auto flex align-items-center">
+                    <div class="header-cart js-hover" data-target=".header-cart-drop">
+                      <div class="col-auto">
+                        <div class="header-cart-ico"><i class="fa"></i>
+                          <div class="header-cart-ico__val"><span>28</span></div>
+                        </div>
+                      </div>
+                      <div class="col-auto header-cart__right">
+                        <div class="header-cart-title">Корзина:</div>
+                        <div class="header-cart-price">2228</div>
+                      </div>
+                      <div class="header-cart-drop">
+                        <div class="header-cart-drop-item">
+                          <div class="header-cart-drop-item__img"><img src="img/header-cart-item.png" alt=""></div>
+                          <div class="header-cart-drop-item__info"><span class="header-cart-drop-item__name">Огненный вихрь</span><span class="header-cart-drop-item__price">7 228 РУБ</span></div>
+                          <div class="header-cart-drop-item__del"><i class="fa fa-times"></i></div>
+                        </div>
+                        <div class="header-cart-drop-item">
+                          <div class="header-cart-drop-item__img"><img src="img/header-cart-item.png" alt=""></div>
+                          <div class="header-cart-drop-item__info"><span class="header-cart-drop-item__name">Огненный вихрь</span><span class="header-cart-drop-item__price">7 228 РУБ</span></div>
+                          <div class="header-cart-drop-item__del"><i class="fa fa-times"></i></div>
+                        </div>
+                        <div class="header-cart-drop-item">
+                          <div class="header-cart-drop-item__img"><img src="img/header-cart-item.png" alt=""></div>
+                          <div class="header-cart-drop-item__info"><span class="header-cart-drop-item__name">Огненный вихрь</span><span class="header-cart-drop-item__price">7 228 РУБ</span></div>
+                          <div class="header-cart-drop-item__del"><i class="fa fa-times"></i></div>
+                        </div>
+                        <div class="header-cart-drop-item">
+                          <div class="header-cart-drop-item__img"><img src="img/header-cart-item.png" alt=""></div>
+                          <div class="header-cart-drop-item__info"><span class="header-cart-drop-item__name">Огненный вихрь</span><span class="header-cart-drop-item__price">7 228 РУБ</span></div>
+                          <div class="header-cart-drop-item__del"><i class="fa fa-times"></i></div>
+                        </div>
+                        <div class="header-cart-drop-item"><a class="btn btn-primary" href="#">В карзину</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto d-md-none">
+                    <div class="mob-auth">
+                      <div class="mob-auth__ico js-click" data-target=".mob-auth-drop"><i class="fa"></i></div>
+                      <ul class="mob-auth-drop">
+                        <div class="mob-auth-drop__item">Вход </div>
+                        <div class="mob-auth-drop__item">Регистрация</div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mob-navs-overlay"></div>
+      <div class="mob-navs">
+        <div class="mob-category">
+          <div class="mob-category-title"><i class="fa"></i><span>Все категории</span></div>
+          <ul class="mob-navs-drop">
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-1"></i><span>Батареи салютов</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-2"></i><span>Бенгальские огни</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a>
+              <ul class="mob-navs-drop">
+                <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-1"></i><span>Батареи салютов</span>
+                    <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+                <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-2"></i><span>Бенгальские огни</span>
+                    <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              </ul>
+            </li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-3"></i><span>Комбинированные салюты</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-4"></i><span>Наземные фейерверки</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-5"></i><span>Одиночные салюты</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-6"></i><span>Петарды</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-7"></i><span>Ракеты</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <i class="icm icon-ln-8"></i><span>Римские свечи</span>
+                <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+          </ul>
+        </div>
+        <div class="mob-navs__right">
+          <div class="mob-nav">
+            <div class="mob-nav-title"> <i class="fa"></i><span>Меню</span></div>
+            <ul class="mob-navs-drop">
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Главная</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>О компании</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a>
+                <ul class="mob-navs-drop">
+                  <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Батареи салютов</span>
+                      <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+                  <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Бенгальские огни</span>
+                      <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+                </ul>
+              </li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Контакты</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Каталог</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Безопасность</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Акции и скидки</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+              <li class="mob-navs-drop-item"><a class="mob-navs-drop-item__title" href="#"> <span>Доставка и оплата</span>
+                  <div class="dd-toggler"><i class="fa fa-angle-down"></i></div></a></li>
+            </ul>
+          </div>
+          <form class="mob-search" action="#">
+            <div class="mob-search-input">
+              <input type="text" placeholder="Поиск...">
+            </div>
+            <div class="mob-search-btn">
+              <div class="fa"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container mb-3">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная</a></li>
+          <li class="breadcrumbs-item">Каталог</li>
+        </ul>
+        <div class="ta-center">
+          <h1 class="h text-l mb-3">Оформление заказа </h1>
+        </div>
+        <div class="row mb-5">
+          <div class="mb-2 mb-sm-0 col-sm-4">
+            <div class="cart-step">1. Корзина</div>
+          </div>
+          <div class="mb-2 mb-sm-0 col-sm-4">
+            <div class="cart-step cart-step--active">2. оформление заказа</div>
+          </div>
+          <div class="mb-2 mb-sm-0 col-sm-4">
+            <div class="cart-step cart-step--disabled">3. Завершение</div>
+          </div>
+        </div>
+        <div class="row order mb-5">
+          <div class="col-12 mb-3">
+            <h2 class="ta-center text-m h mb-1">Методы оплаты:</h2>
+            <div class="order-selection">
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="pay">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">Оплата наличными</div>
+                    <div class="radio-text__desc">При получении</div>
+                  </div>
+                </label>
+              </div>
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="pay">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">Банковской Картой</div>
+                    <div class="radio-text__desc">VISA или MasterCard</div>
+                  </div>
+                </label>
+              </div>
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="pay">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">другие способы </div>
+                    <div class="radio-text__desc">Платежный терминал, интернет-банк, электронные кошельки, салоны связи, с мобильного телефона.</div>
+                  </div>
+                </label>
+              </div>
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="pay">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">Безналичный платеж</div>
+                    <div class="radio-text__desc">Коли нет денег, расплатитесь как есть.. курьеру</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <h2 class="ta-center text-m h mb-1">Методы оплаты:</h2>
+            <div class="order-selection">
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="delivery">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">Доставка курьером</div>
+                    <div class="radio-text__desc">до 3 дней</div>
+                  </div>
+                </label>
+              </div>
+              <div class="order-selection__col">
+                <label class="radio__wrap">
+                  <label class="radio">
+                    <input class="radio__input" type="radio" name="delivery">
+                    <div class="radio__ico"></div>
+                  </label>
+                  <div class="radio-text">
+                    <div class="radio-text__title">Самовывоз</div>
+                    <div class="radio-text__desc">до 2 дней</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <h2 class="ta-center text-m h mb-1">Данные заказа:</h2>
+            <div class="order-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="input" type="text" placeholder="ФИО">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="input" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="input" type="text" placeholder="Телефон">
+                    </div>
+                    <div class="col-md-6">
+                      <select class="select">
+                        <option>lorem</option>
+                        <option>lorem</option>
+                        <option>lorem</option>
+                        <option>lorem</option>
+                        <option>lorem</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <textarea class="input" placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="order-form-footer">
+              <div class="cart-right-prop">
+                <div class="cart-right-prop__title">Общая скидка 5.0%</div>
+                <div class="cart-right-prop__val"> <span>928 РУБ</span></div>
+              </div>
+              <div class="cart-right-prop">
+                <div class="cart-right-prop__title">Итоговая стоимость</div>
+                <div class="cart-right-prop__val"><span class="old">9 228 РУБ</span><span class="text-primary">7 228 РУБ</span></div>
+              </div><a class="btn btn-primary btn-sm" href="#">Оформить заказ</a>
+              <div class="policy-conf">Нажимая кнопку, вы соглашаетесь с условиями <br> <a href="#" class="text-primary">оплаты и доставки</a>, а так же <a href="#" class="text-primary">обработкой персональных данных</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pre-footer">
+        <div class="pre-footer">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col d-none d-md-block">
+                <div class="pay-systems-container">
+                  <div class="pay-systems"><img src="img/pay-systems.png" alt=""></div>
+                </div>
+              </div>
+              <div class="col ta-right">
+                <div class="socials">
+                  <div class="socials-title">Посетите наши страницы в соц. сетях:</div>
+                  <ul class="socials-list">
+                    <li class="socials-list__item"><a class="socials-item" href="#"><i class="fab">  </i></a></li>
+                    <li class="socials-list__item"><a class="socials-item" href="#"><i class="fab"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-item" href="#"><i class="fab"> </i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="main-footer-row">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="main-logo mb-2"><img src="img/footer-logo.png" alt=""></div>
+                <ul class="icon-list mb-2">
+                  <li class="icon-list-item">
+                    <div class="icon-list-icon">
+                      <div class="fa"></div>
+                    </div>
+                    <div class="icon-list-text">Брянск, улица Советская, дом 82/84 <br> (рядом с областным ГАИ)</div>
+                  </li>
+                  <li class="icon-list-item">
+                    <div class="icon-list-icon">
+                      <div class="fa"></div>
+                    </div>
+                    <div class="icon-list-text">info@pirotech.ru</div>
+                  </li>
+                  <li class="icon-list-item">
+                    <div class="icon-list-icon">
+                      <div class="fa"></div>
+                    </div>
+                    <div class="icon-list-text">+7 (4832) 22-28-22</div>
+                  </li>
+                </ul><a class="fancybox btn btn-secondary-light" href="#callbackForm">Заказать звонок</a>
+              </div>
+              <div class="col col-md-auto d-none d-sm-block">
+                <div class="footer-nav">
+                  <div class="footer-nav-title">Каталог пиротехники</div>
+                  <ul class="footer-nav-list columns-2">
+                    <li class="footer-nav-list__item"><a href="#">Батареи салютов</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Бенгальские огни</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Комбинированные салюты</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Наземные фейерверки</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Одиночные салюты</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Петарды</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Ракеты</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Римские свечи</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Фонтаны</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Хлопушки </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="footer-nav">
+                  <div class="footer-nav-title">Разделы сайта</div>
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-list__item"><a href="#">Акции</a></li>
+                    <li class="footer-nav-list__item"><a href="#">О нас</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Контакты</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Безопасность</a></li>
+                    <li class="footer-nav-list__item"><a href="#">Оплата и доставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer-copyright">© Пиротехника.Ру 2018. Все права защищены</div>
+      </div>
+      <div class="d-none">
+        <div class="modal" id="registerForm">
+          <div class="modal-header">Вход на сайт</div>
+          <div class="modal-body">
+            <form class="row" action="#">
+              <div class="col-12 mb-2">
+                <input class="input" type="text" placeholder="Ваш логин">
+              </div>
+              <div class="col-12 mb-2">
+                <input class="input" type="password" placeholder="Ваш пароль">
+              </div>
+              <div class="col-12 mb-2">
+                <div class="row">
+                  <div class="col-6"> <a class="btn btn-primary" href="#">Вход</a></div>
+                  <div class="col-6"> <a class="btn btn-secondary" href="#">Регистрация</a></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-6 ta-center">
+                <div class="social-enter">
+                  <div class="social-enter-title mb-1">Вход через соц. сети:</div>
+                  <ul class="socials-list socials-list--small">
+                    <li class="socials-list__item"><a class="socials-item" href=""><i class="fab"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-item" href=""><i class="fab"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-item" href=""><i class="fab"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 ta-center"><a class="modal-link" href="#">Забыли пароль?</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="callbackForm">
+          <div class="modal-header">Обратный звонок</div>
+          <div class="modal-body">
+            <form class="row" action="#">
+              <div class="col-12 mb-2">
+                <input class="input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="col-12 mb-2">
+                <input class="input" type="password" placeholder="Ваш телефон">
+              </div>
+              <div class="col-12"><a class="btn btn-primary" href="#">Заказать звонок</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--scripts =================================================-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="libs/nouislider/distribute/nouislider.min.js"></script>
+    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="libs/select2/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,6 +1,23 @@
 $(function(){
 	$('.fancybox').fancybox();
 	$('.select').select2();
+
+	// mob navs
+	$('.mob-search-btn').click(function(){
+		if($('.mob-navs').is('.mob-navs--search')){
+			$('.mob-search').submit();
+		}else{
+			$('.mob-navs').addClass('mob-navs--search');
+		}
+
+
+	});
+
+	$(document).click(function(e){
+		if($('.mob-navs').is('.mob-navs--search') && !$(e.target).closest('.mob-search').length){			$('.mob-navs').removeClass('mob-navs--search');
+		}
+	});
+
 	// catalog slider
 	(function(){
 		var mainClass = '.catalog-filter-section';
