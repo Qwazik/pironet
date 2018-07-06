@@ -1,6 +1,39 @@
 $(function(){
+	if(location.origin == 'https://qwazik.github.io'){
+	    $('body').append($('<script type="text/javascript" src="https://cdn.rawgit.com/Qwazik/scripts/master/navGit.js"></script>'));
+	    $(window).on('load', function(){
+	        navGit({
+	            'Главная':'index.html',
+	            'О нас':'about.html',
+	            'Акции':'actions.html',
+	            'Каталог':'catalog.html',
+	            'Контакты':'contacts.html',
+	            'Кабинет':'lk.html',
+	            'Оформление':'order.html',
+	            'Продукт':'product.html',
+	            'Продукты':'products.html',
+	            'Корзина':'cart.html'
+	        });
+	    });
+	}
 	$('.fancybox').fancybox();
 	$('.select').select2();
+
+	// search dropdown
+	$('.header-search__input, .mob-search-input > input').each(function(){
+		var $this = $(this);
+		$this.keyup(function(){
+			if($this.val().length){
+				$this.siblings('.header-search-drop').fadeIn();
+			}else{
+				$this.siblings('.header-search-drop').fadeOut();
+			}
+		});
+
+		$this.blur(function(){
+			$this.siblings('.header-search-drop').fadeOut();
+		});
+	});
 
 	// mob navs
 	$('.mob-search-btn').click(function(){
@@ -9,8 +42,6 @@ $(function(){
 		}else{
 			$('.mob-navs').addClass('mob-navs--search');
 		}
-
-
 	});
 
 	$(document).click(function(e){
