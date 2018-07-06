@@ -1,0 +1,103 @@
+extends _template
+
+block main
+	.container.mb-3
+		ul.breadcrumbs
+			li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+			li.breadcrumbs-item Каталог
+		.ta-center
+			h1.h.text-l.mb-3 личный кабинет 
+		.row
+			.col-lg-9
+				.row.mb-2
+					.mb-2.mb-sm-0.col-sm-4
+						.lk-stat
+							span Всего заказов
+							span 3
+					.mb-2.mb-sm-0.col-sm-4
+						.lk-stat
+							span На сумму
+							span 22 222 руб
+					.mb-2.mb-sm-0.col-sm-4
+						.lk-stat
+							span Скидка на новые
+							span 28%
+				.row
+					.col-12.mb-2
+						.lk-table__wrap
+							.lk-table__title
+							table.lk-table
+								thead
+									tr
+										td Название товара
+										td Стоимость
+										td Количество
+										td Итого
+								tbody
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td 1
+										td.nowrap 7 228 РУБ
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td 1
+										td.nowrap 7 228 РУБ
+								tfoot
+									tr
+										td(colspan="3") Формируется
+										td.nowrap 7 228 РУБ
+					.col-12.mb-2
+						.lk-table__wrap
+							.lk-table__title
+							table.lk-table
+								thead
+									tr
+										td Название товара
+										td Стоимость
+										td Количество
+										td Итого
+								tbody
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td 1
+										td.nowrap 7 228 РУБ
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td 1
+										td.nowrap 7 228 РУБ
+								tfoot
+									tr
+										td(colspan="3") Формируется
+										td.nowrap 7 228 РУБ
+			.col-lg-3
+				.lk-right
+					ul.lk-right-info
+						li.lk-right-info__item
+							span ФИО
+							span Пахом Сергеевич 228
+						li.lk-right-info__item
+							span Адрес доставки
+							span г. Караганда, ул. Поперечного д.28
+						li.lk-right-info__item
+							span Телефон
+							span +7 228 300 22 28
+						li.lk-right-info__item
+							span E-mail
+							span 228@mail.ru
+					a(href="#").btn.btn-secondary.btn-sm редактировать профиль

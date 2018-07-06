@@ -1,0 +1,10 @@
+mixin productAction(img,name,oldprice,price, discount)
+	a(href="#").product-action
+		.product-action-discount
+			span.product-action-discount__val=discount
+		.product-action-image
+			img(src=img, alt=name)
+		.product-action-text
+			.product-action-text__name=name
+			.product-action-text__price-old=oldprice
+			.product-action-text__price=price

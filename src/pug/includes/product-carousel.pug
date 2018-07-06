@@ -1,0 +1,12 @@
+mixin productCarousel(name, col)
+	.product-carousel
+		.product-carousel-header
+			span.product-carousel-title=name
+			.product-carousel-nav
+				button.product-carousel-nav__prev: i.fa.fa-angle-left
+				button.product-carousel-nav__next: i.fa.fa-angle-right
+		.product-carousel-body
+			ul.product-carousel-list.owl-carousel(data-items=col)
+				-for(i=0; i<10; i++)
+					li.product-carousel-list__item
+						include product-item

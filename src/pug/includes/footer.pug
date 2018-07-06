@@ -1,0 +1,88 @@
+.pre-footer
+	.pre-footer
+		.container
+			.row.align-items-center
+				.col.d-none.d-md-block
+					.pay-systems-container: .pay-systems: img(src="img/pay-systems.png", alt="")
+				.col.ta-right
+					.socials
+						.socials-title Посетите наши страницы в соц. сетях:
+						ul.socials-list
+							li.socials-list__item: a(href="#").socials-item: i.fab   
+							li.socials-list__item: a(href="#").socials-item: i.fab 
+							li.socials-list__item: a(href="#").socials-item: i.fab  
+.main-footer
+	.main-footer-row
+		.container
+			.row.justify-content-between
+				.col-auto
+					.main-logo.mb-2: img(src="img/footer-logo.png", alt="")
+					ul.icon-list.mb-2
+						li.icon-list-item
+							.icon-list-icon
+								.fa 
+							.icon-list-text Брянск, улица Советская, дом 82/84 <br> (рядом с областным ГАИ)
+						li.icon-list-item
+							.icon-list-icon
+								.fa 
+							.icon-list-text info@pirotech.ru
+						li.icon-list-item
+							.icon-list-icon
+								.fa 
+							.icon-list-text +7 (4832) 22-28-22
+					a(href="#callbackForm").fancybox.btn.btn-secondary-light Заказать звонок
+				.col.col-md-auto.d-none.d-sm-block
+					.footer-nav
+						.footer-nav-title Каталог пиротехники
+						ul.footer-nav-list.columns-2
+							li.footer-nav-list__item: a(href="#") Батареи салютов
+							li.footer-nav-list__item: a(href="#") Бенгальские огни
+							li.footer-nav-list__item: a(href="#") Комбинированные салюты
+							li.footer-nav-list__item: a(href="#") Наземные фейерверки
+							li.footer-nav-list__item: a(href="#") Одиночные салюты
+							li.footer-nav-list__item: a(href="#") Петарды
+							li.footer-nav-list__item: a(href="#") Ракеты
+							li.footer-nav-list__item: a(href="#") Римские свечи
+							li.footer-nav-list__item: a(href="#") Фонтаны
+							li.footer-nav-list__item: a(href="#") Хлопушки 
+				.col-auto.d-none.d-md-block
+					.footer-nav
+						.footer-nav-title Разделы сайта
+						ul.footer-nav-list
+							li.footer-nav-list__item: a(href="#") Акции
+							li.footer-nav-list__item: a(href="#") О нас
+							li.footer-nav-list__item: a(href="#") Контакты
+							li.footer-nav-list__item: a(href="#") Безопасность
+							li.footer-nav-list__item: a(href="#") Оплата и доставка
+	.main-footer-copyright © Пиротехника.Ру 2018. Все права защищены
+.d-none
+	.modal#registerForm
+		.modal-header Вход на сайт
+		.modal-body
+			form(action="#").row
+				.col-12.mb-2: input(type="text" placeholder="Ваш логин").input
+				.col-12.mb-2: input(type="password" placeholder="Ваш пароль").input
+				.col-12.mb-2
+					.row
+						.col-6 
+							a(href="#").btn.btn-primary Вход
+						.col-6 
+							a(href="#").btn.btn-secondary Регистрация
+		.modal-footer
+			.row
+				.col-6.ta-center
+					.social-enter
+						.social-enter-title.mb-1 Вход через соц. сети:
+						ul.socials-list.socials-list--small
+							li.socials-list__item: a(href="").socials-item: i.fab 
+							li.socials-list__item: a(href="").socials-item: i.fab 
+							li.socials-list__item: a(href="").socials-item: i.fab 
+				.col-6.ta-center
+					a(href="#").modal-link Забыли пароль?
+	.modal#callbackForm
+		.modal-header Обратный звонок
+		.modal-body
+			form(action="#").row
+				.col-12.mb-2: input(type="text" placeholder="Ваше имя").input
+				.col-12.mb-2: input(type="password" placeholder="Ваш телефон").input
+				.col-12: a(href="#").btn.btn-primary Заказать звонок

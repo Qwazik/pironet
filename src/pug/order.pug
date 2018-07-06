@@ -1,0 +1,104 @@
+extends _template
+
+block main
+	.container.mb-3
+		ul.breadcrumbs
+			li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+			li.breadcrumbs-item Каталог
+		.ta-center
+			h1.h.text-l.mb-3 Оформление заказа 
+		.row.mb-5
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step 1. Корзина
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step.cart-step--active 2. оформление заказа
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step.cart-step--disabled 3. Завершение
+		.row.order.mb-5
+			.col-12.mb-3
+				h2.ta-center.text-m.h.mb-1 Методы оплаты:
+				.order-selection
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="pay").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title Оплата наличными
+								.radio-text__desc При получении
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="pay").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title Банковской Картой
+								.radio-text__desc VISA или MasterCard
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="pay").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title другие способы 
+								.radio-text__desc Платежный терминал, интернет-банк, электронные кошельки, салоны связи, с мобильного телефона.
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="pay").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title Безналичный платеж
+								.radio-text__desc Коли нет денег, расплатитесь как есть.. курьеру
+			.col-12.mb-2
+				h2.ta-center.text-m.h.mb-1 Методы оплаты:
+				.order-selection
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="delivery").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title Доставка курьером
+								.radio-text__desc до 3 дней
+					.order-selection__col
+						label.radio__wrap
+							label.radio
+								input(type="radio" name="delivery").radio__input
+								.radio__ico
+							.radio-text
+								.radio-text__title Самовывоз
+								.radio-text__desc до 2 дней
+			.col-12.mb-2
+				h2.ta-center.text-m.h.mb-1 Данные заказа:
+				.order-form
+					.row
+						.col-md-6
+							.row
+								.col-md-6
+									input(type="text" placeholder="ФИО").input
+								.col-md-6
+									input(type="text" placeholder="E-mail").input
+								.col-md-6
+									input(type="text" placeholder="Телефон").input
+								.col-md-6
+									select.select
+										option lorem
+										option lorem
+										option lorem
+										option lorem
+										option lorem
+						.col-md-6
+							textarea(placeholder="Комментарий").input
+				.order-form-footer
+					.cart-right-prop
+						.cart-right-prop__title Общая скидка 5.0%
+						.cart-right-prop__val 
+							span 928 РУБ
+					.cart-right-prop
+						.cart-right-prop__title Итоговая стоимость
+						.cart-right-prop__val
+							span.old 9 228 РУБ
+							span.text-primary 7 228 РУБ
+					a(href="#").btn.btn-primary.btn-sm Оформить заказ
+					.policy-conf Нажимая кнопку, вы соглашаетесь с условиями <br> <a href="#" class="text-primary">оплаты и доставки</a>, а так же <a href="#" class="text-primary">обработкой персональных данных</a>

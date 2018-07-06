@@ -1,0 +1,89 @@
+extends _template
+
+block main
+	.container.mb-3
+		ul.breadcrumbs
+			li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+			li.breadcrumbs-item Каталог
+		.ta-center
+			h1.h.text-l.mb-3 Корзина 
+		.row.mb-2
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step.cart-step--active 1. Корзина
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step 2. оформление заказа
+			.mb-2.mb-sm-0.col-sm-4
+				.cart-step.cart-step--disabled 3. Завершение
+		.row
+			.col-lg-9
+				.row
+					.col-12.mb-2
+						.lk-table__wrap.nobd.mb-2
+							.lk-table__title
+							table.lk-table
+								thead
+									tr
+										td Название товара
+										td Стоимость
+										td Количество
+										td Итого
+										td
+								tbody
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td
+											.set-number
+												button.set-number__btn.dec -
+												input(type="text" value="1" readonly).set-number__input
+												button.set-number__btn.inc +
+										td.nowrap 7 228 РУБ
+										td.nowrap: button.del X
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td
+											.set-number
+												button.set-number__btn.dec -
+												input(type="text" value="1" readonly).set-number__input
+												button.set-number__btn.inc +
+										td.nowrap 7 228 РУБ
+										td.nowrap: button.del X
+									tr
+										td
+											.lk-table__main
+												.lk-table__image: img(src="img/product-1.png", alt="")
+												.lk-table__name Огненный вихрь
+										td.nowrap 7 228 РУБ
+										td
+											.set-number
+												button.set-number__btn.dec -
+												input(type="text" value="1" readonly).set-number__input
+												button.set-number__btn.inc +
+										td.nowrap 7 228 РУБ
+										td.nowrap: button.del X
+						a(href="#").btn.btn-muted.btn-sm Продолжить покупки
+			.col-lg-3
+				.cart-right
+					.cart-right-row
+						p Бесплатная доставка при заказе от 3 000 руб <br> Скидка 5% при заказе от 5 000 руб
+					.cart-right-row
+						.cart-right-prop
+							.cart-right-prop__title Общая скидка 5.0%
+							.cart-right-prop__val 
+								span 928 РУБ
+					.cart-right-row
+						.cart-right-prop
+							.cart-right-prop__title Итоговая стоимость
+							.cart-right-prop__val
+								span.old 9 228 РУБ
+								span.text-primary 7 228 РУБ
+					.cart-right-row
+						input(type="text" placeholder="Промокод").input
+					a(href="#").btn.btn-primary.btn-sm Оформить заказ

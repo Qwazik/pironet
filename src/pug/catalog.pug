@@ -1,0 +1,247 @@
+extends _template
+
+block main
+	.container.mb-3
+		ul.breadcrumbs
+			li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+			li.breadcrumbs-item Каталог
+		.ta-center
+			h1.h.text-l.mb-3 Любые фейерверки для вас 
+		.row.catalog.mb-3
+			.col-12.catalog-column.col-lg-3
+				a(href="#").catalog-item.catalog-item--big
+					.catalog-item-ico: i.icm.icon-ln-1
+					.catalog-item-title Батареи Салютов
+					.catalog-item-desc Короли фейерверков: от 6 до более чем 300 залпов.
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-2
+					.catalog-item-title Бенгальские огни
+					.catalog-item-desc Яркие и искристые бенгальские свечи, любых цветов и размеров.
+			.col-12.catalog-column.col-lg-3
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-8
+					.catalog-item-title Римские свечи
+					.catalog-item-desc Каждый залп - все выше, ярче, красочнее
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-4
+					.catalog-item-title Наземные фейерверки
+					.catalog-item-desc Вертящиеся жуки, жужжащие пчелы и супербабочки
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-9
+					.catalog-item-title Фонтаны
+					.catalog-item-desc Снопы искристого огня с разнообразными эффектами
+			.col-12.catalog-column.col-lg-3
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-5
+					.catalog-item-title Одиночные салюты
+					.catalog-item-desc Настоящий большой калибр для истинных ценителей
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-6
+					.catalog-item-title Петарды
+					.catalog-item-desc Пороховые заряды веселья от небольших до самых оглушительных
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-10
+					.catalog-item-title Хлопушки
+					.catalog-item-desc Пороховые и пневматические заряды с разнообразным наполнением
+			.col-12.catalog-column.col-lg-3
+				a(href="#").catalog-item
+					.catalog-item-ico: i.icm.icon-ln-7
+					.catalog-item-title Ракеты
+					.catalog-item-desc Выше ракет - только звезды
+				a(href="#").catalog-item.catalog-item--big
+					.catalog-item-ico: i.icm.icon-ln-3
+					.catalog-item-title Комбинированные салюты
+					.catalog-item-desc Собраны из разнообразных по силе калибров.
+	.container
+		h2.h.text-l.ta-center.mb-2 Все товары
+		.row
+			.col-12.col-lg-3
+				.catalog-filter
+					.catalog-filter-mob(data-target=".catalog-filter-main").js-click
+						i.fa.fa-filter
+						span Фильтр
+					.catalog-filter-main
+						.mobile-sep
+							.catalog-filter-section
+								.catalog-filter-slider__wrap
+									.catalog-filter-slider
+								.catalog-filter-inputs
+									.catalog-filter-inputs__title Цена
+									.catalog-filter-inputs__right
+										input(type="text").input.min.catalog-filter-inputs__input
+										.sep - 
+										input(type="text").input.max.catalog-filter-inputs__input
+							.catalog-filter-section
+								.catalog-filter-slider__wrap
+									.catalog-filter-slider
+								.catalog-filter-inputs
+									.catalog-filter-inputs__title Время работы
+									.catalog-filter-inputs__right
+										input(type="text").input.min.catalog-filter-inputs__input
+										.sep - 
+										input(type="text").input.max.catalog-filter-inputs__input
+							.catalog-filter-section
+								.catalog-filter-slider__wrap
+									.catalog-filter-slider
+								.catalog-filter-inputs
+									.catalog-filter-inputs__title Мощность
+									.catalog-filter-inputs__right
+										input(type="text").input.min.catalog-filter-inputs__input
+										.sep - 
+										input(type="text").input.max.catalog-filter-inputs__input
+							.catalog-filter-section
+								.catalog-filter-slider__wrap
+									.catalog-filter-slider
+								.catalog-filter-inputs
+									.catalog-filter-inputs__title Заряды
+									.catalog-filter-inputs__right
+										input(type="text").input.min.catalog-filter-inputs__input
+										.sep - 
+										input(type="text").input.max.catalog-filter-inputs__input
+						.mobile-sep
+							.catalog-filter-section
+								label.checkbox__wrap
+									label.checkbox
+										input(type="checkbox").checkbox__input
+										.checkbox__icon
+									.checkbox__title Только новинки
+								label.checkbox__wrap
+									label.checkbox
+										input(type="checkbox").checkbox__input
+										.checkbox__icon
+									.checkbox__title Запуск в помещении
+								label.checkbox__wrap
+									label.checkbox
+										input(type="checkbox").checkbox__input
+										.checkbox__icon
+									.checkbox__title Выбор эффекта фейерверков
+						.mobile-sep
+							.catalog-filter-effects
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-red.png", alt="")
+								label.catalog-filter-effects__item
+									input(type="checkbox" name="effect")
+									.catalog-filter-effects__check
+									img(src="img/filter-yellow.png", alt="")
+
+						a(href="#").btn.btn-primary Показать
+			.col-12.col-lg-9
+				.sort-panel.mb-2
+					.sort-panel-col 
+						span Показано 1-30 из 592
+					.sort-panel-col 
+						span Сортировать по:
+						select.select 
+							option(value="#") Цене - Убыванию
+							option(value="#") Цене - Убыванию
+							option(value="#") Цене - Убыванию
+							option(value="#") Цене - Убыванию
+					.sort-panel-col
+						span Показывать по: 
+						select.select 
+							option(value="#") 28
+							option(value="#") 28
+							option(value="#") 28
+							option(value="#") 28
+				.row
+					-for(i=0;i<7;i++)
+						.col-6.col-sm-4.col-lg-3.mb-2
+							include includes/product-item
+					.col-12
+						ul.pagination
+							li.pagination__item.disabled: i.fa 
+							li.pagination__item.active 1
+							li.pagination__item 2
+							li.pagination__item 3
+							li.pagination__item: i.fa 
+	.home-content-section
+		.container
+			.content-section
+				h2.h.ta-center.text-l.mb-1 Любые фейерверки для вас
+				.row
+					.col-12.col-md-6
+						p Мы не рекламируем, не предлагаем и не продаём "Воздух". На Пиронете вы никогда не увидите карточку какого-либо фейерверка с неприятным комментарием "Временно недоступен". Вся продукция синхронизируется по наличию с нашими складами каждый час! По всем городам присутствия. 
+
+						p Если вы выбрали ваш город и видите в каталоге интересующий вас товар и его цену - значит как минимум одна штука этого товара в выбранном городе по крайней мере час назад точно была и с вероятностью в 99.9% есть прямо сейчас. И вы гарантировано получите именно то, что выбрали. 
+
+						p Мы предлагаем только лучшие фейерверки. А лучшие фейерверки - китайские. Изготовлением фейерверков в Китае занимаются уже более 10 веков и сейчас никто в мире не сможет сравниться с мастерством китайских пиротехников. Мы не является перекупщиком чьей-либо продукции, все наши фейерверки изготавливаются по прямым контрактам и являются эксклюзивными по эффектам и дизайну.
+					.col-12.col-md-6
+						p Наши цены абсолютно адекватны, охватывают весь возможный диапазон ваших пожеланий от небольших салютов по 100 рублей до мегабатарей и соответствуют качеству предлагаемой продукции. Мы уже больше 20 лет занимаемся фейерверками в России, знаем, сколько что должно стоить и можем предложить вам разумный выбор. 
+
+						p Мы предлагаем вам практически бесконечное количество вариантов оплаты. Наличный расчёт, пластиковые карты, банковские переводы, электронные валюты, онлайн-банки, терминалы оплаты, даже счета ваших сотовых телефонов - выбирайте любой удобный вам способ. Только одна просьба: не торопитесь оплачивать заказ любым безналичным способом, дождитесь звонка нашего оператора, помните про тот самый 0.1%.
+
+						p.mobile-paragraph Мы не оставим наших клиентов наедине с возникшими проблемами. Пиронет, несмотря на широчайший географический охват имеет централизованное управление. Если любой ваш вопрос или претензию не смогли решить сотрудники на месте, просто напишите на электронную почту info@pirotech.ru и ваша проблема станет нашей.   <a href="#">Подробнее</a>

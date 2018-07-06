@@ -1,0 +1,30 @@
+extends _template
+
+block main
+	.container.mb-3
+		ul.breadcrumbs
+			li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+			li.breadcrumbs-item Каталог
+		.ta-center
+			h1.h.text-l.mb-3 Контакты 
+		.row.mb-5.contacts
+			.col-12.col-sm-4.mb-2.mb-sm-0
+				.icon-block
+					.icon-block-ico: i.fa 
+					.icon-block-title Адрес
+					.icon-block-desc Брянск, улица Советская,<br> дом 82/84 (рядом с областным ГАИ)
+
+			.col-12.col-sm-4.mb-2.mb-sm-0
+				.icon-block
+					.icon-block-ico: i.fa 
+					.icon-block-title Телефон
+					.icon-block-desc +7 (495) 22-28-22
+
+			.col-12.col-sm-4.mb-2.mb-sm-0
+				.icon-block
+					.icon-block-ico: i.fa 
+					.icon-block-title E-mail
+					.icon-block-desc info@pirotech.ru
+
+	.map
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2033f1bba2e8e2f48e32b6248b06f770a917be770b9fda02e598673f165b0f28&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>

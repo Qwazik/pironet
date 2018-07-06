@@ -1,0 +1,73 @@
+extends _template
+
+block main
+	.home-main.mb-3
+		.container
+			.row
+				.col-4.col-lg-3.mb-2.mb-lg-0.d-none.d-md-block
+					include includes/left-menu
+				.col
+					ul.home-slider.owl-carousel
+						-for(i=0;i<3;i++)
+							li.home-slider__item
+								.home-slide(style="background-image: url(img/slide-1.jpg)")
+									.home-slide__title Удиви друзей оригинальным презентом
+									.home-slide__header <span class="text-primary">Подари</span> ФЕЙЕРВЕРК
+									.home-slide__text Оформи и оплати заказ подарка <br> с бесплатной доставкой прямо по адресу!
+									a(href="#").btn.btn-secondary Заказать подарок
+
+
+				.col-12.col-lg-3
+					.row.home-action
+						.col-6.col-lg-auto.home-action-col
+							+productAction('img/product-1.png', 'Огненный вихрь', '9 228 РУБ', '7 228 РУБ', '-22%')
+						.col-6.col-lg-auto.home-action-col
+							+productAction('img/product-2.png', 'XXI век', '2 228 РУБ', '1 228 РУБ', '-28%')
+	.container
+		include includes/product-carousel
+		+productCarousel('Хиты продаж', 5)
+		+productCarousel('Новинки', 5)
+	.background-muted.d-none.d-md-block
+		.container
+			include includes/action-block
+	.home-content-section
+		.container
+			.content-section
+				.d-none.d-md-block
+					h1.h.text-xl.ta-center.mb-2 Интернет-магазин «Пиротехника.<span class="text-primary">РУ</span>»
+					.ta-center.text-s.mb-6 Почему фейерверки надо покупать именно у нас
+					.h-features
+						.h-features-item
+							.h-features-item-icon: i.icm.icon-f1
+							.h-features-item-text
+								.h-features-item-bold 100%
+								.h-features-item-desc Гарантия наличия товара
+						.h-features-item
+							.h-features-item-icon: i.icm.icon-f2
+							.h-features-item-text
+								.h-features-item-bold 30%
+								.h-features-item-desc Достигают скидки
+						.h-features-item
+							.h-features-item-icon: i.icm.icon-f3
+							.h-features-item-text
+								.h-features-item-bold 400
+								.h-features-item-desc Видов пиротехники
+						.h-features-item
+							.h-features-item-icon: i.icm.icon-f4
+							.h-features-item-text
+								.h-features-item-bold 10
+								.h-features-item-desc Способов оплаты
+				h2.h.ta-center.text-l.mb-1 Любые фейерверки для вас
+				.row
+					.col-12.col-md-6
+						p Мы не рекламируем, не предлагаем и не продаём "Воздух". На Пиронете вы никогда не увидите карточку какого-либо фейерверка с неприятным комментарием "Временно недоступен". Вся продукция синхронизируется по наличию с нашими складами каждый час! По всем городам присутствия. 
+
+						p Если вы выбрали ваш город и видите в каталоге интересующий вас товар и его цену - значит как минимум одна штука этого товара в выбранном городе по крайней мере час назад точно была и с вероятностью в 99.9% есть прямо сейчас. И вы гарантировано получите именно то, что выбрали. 
+
+						p Мы предлагаем только лучшие фейерверки. А лучшие фейерверки - китайские. Изготовлением фейерверков в Китае занимаются уже более 10 веков и сейчас никто в мире не сможет сравниться с мастерством китайских пиротехников. Мы не является перекупщиком чьей-либо продукции, все наши фейерверки изготавливаются по прямым контрактам и являются эксклюзивными по эффектам и дизайну.
+					.col-12.col-md-6
+						p Наши цены абсолютно адекватны, охватывают весь возможный диапазон ваших пожеланий от небольших салютов по 100 рублей до мегабатарей и соответствуют качеству предлагаемой продукции. Мы уже больше 20 лет занимаемся фейерверками в России, знаем, сколько что должно стоить и можем предложить вам разумный выбор. 
+
+						p Мы предлагаем вам практически бесконечное количество вариантов оплаты. Наличный расчёт, пластиковые карты, банковские переводы, электронные валюты, онлайн-банки, терминалы оплаты, даже счета ваших сотовых телефонов - выбирайте любой удобный вам способ. Только одна просьба: не торопитесь оплачивать заказ любым безналичным способом, дождитесь звонка нашего оператора, помните про тот самый 0.1%.
+
+						p.mobile-paragraph Мы не оставим наших клиентов наедине с возникшими проблемами. Пиронет, несмотря на широчайший географический охват имеет централизованное управление. Если любой ваш вопрос или претензию не смогли решить сотрудники на месте, просто напишите на электронную почту info@pirotech.ru и ваша проблема станет нашей.   <a href="#">Подробнее</a>

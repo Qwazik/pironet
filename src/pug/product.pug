@@ -1,0 +1,84 @@
+extends _template
+
+block main
+	.container.mb-5
+		.row
+			.col-12.col-lg-3
+				.mb-2.d-none.d-md-block.left-menu-md
+					include includes/left-menu
+			.col-12.col-lg-9.card
+				.row.align-items-center.justify-content-between.mb-1
+					.col-auto
+						h1.h.text-m1 Батареи салютов
+					.col-auto
+						ul.breadcrumbs
+							li.breadcrumbs-item: a(href="/").breadcrumbs-link Главная
+							li.breadcrumbs-item Каталог
+				.row.mb-5
+					.col-12.col-sm-4.mb-2.mb-sm-0
+						.card-preview
+							.card-preview-main
+								.product-action-discount
+									span.product-action-discount__val -22%
+								img(src="img/card-preview.png", alt="")
+							ul.card-preview-thumbs.owl-carousel
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+								li: a(href="#").card-preview-thumbs__item: img(src="img/card-preview.png", alt="")
+					.col-12.col-sm-8
+						h1.h.text-m1.mb-1 CCXXVIII век
+						p.text-xs.text-secondary.mb-2 Комбинированный салют: фонтан золотые искры с цветными жемчужинами, золотые вертушки, лимонные, пурпурно-синие, красно-бирюзовые звезды, золотое мерцание, искристые брызги.
+						
+						ul.card-params.mb-2
+							li.card-params__item 
+								span Фасовка 
+								span 1 шт.
+							li.card-params__item 
+								span Мощность
+								span 2
+							li.card-params__item 
+								span Калибр
+								span 1.25 дюйм
+							li.card-params__item 
+								span Заряды
+								span 37
+							li.card-params__item 
+								span Время работы
+								span 80 сек.
+							li.card-params__item 
+								span Высота подъема
+								span 1 шт.
+							li.card-params__item 
+								span Безопасный радиус
+								span -
+							li.card-params__item 
+								span Вес
+								span 1.25 дюйм
+							li.card-params__item 
+								span Габариты
+								span 37
+							li.card-params__item 
+								span Запуск в помещении
+								span 80 сек.
+						.card-buy.mb-2
+							.card-buy__price
+								.product-item-info
+									.product-item-info__oldprice 5 228 РУБ
+									.product-item-info__price 5 228 РУБ
+							.card-buy__count
+								.set-number
+									button.set-number__btn.dec -
+									input(type="text" value="1" readonly).set-number__input
+									button.set-number__btn.inc +
+							.card-buy__btn
+								a(href="#").buy-btn 
+									i.fa 
+									span Купить
+						.card-video
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/ryxabBxipiA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				include includes/product-carousel
+				+productCarousel('Рекомендуемые товары', 4)

@@ -1,0 +1,184 @@
+@import "_mixins";
+
+/*-------------------------------------------------*/
+/*  font-family
+/*-------------------------------------------------*/
+$ff-primary: Lato, sans-serif;
+$ff-secondary: LatoHeavy, sans-serif;
+
+// ---------------------------
+// colors
+// ---------------------------
+
+$white		 : white;
+$orange		 : #ff6e41;
+$grey    : #f7f7f7;
+$grey-md		 : #d7d7d7;
+$grey-dark	 : #e6eaed;
+$blue-light	 : #8a9094;
+$blue-light2 : #cad3d9;
+$blue		 : #2a363f;
+$blue-dark	 : #1e272e;
+
+// set pseudo
+$light-color             : $white; //body
+$primary-color          : $orange;
+$muted-color      : $grey;
+$muted-md-color			: $grey-md;
+$muted-color-light			: $grey-dark;
+$secondary-color        : $blue;
+$secondary-color-light  : $blue-light;
+$secondary-color-light2 : $blue-light2;
+$secondary-color-dark	: $blue-dark;
+
+// ---------------------------
+// font sizes
+// ---------------------------
+
+$fz-xl1	: 32;
+$fz-xl	: 28;
+$fz-l	: 22;
+$fz-m1	: 17;
+$fz-m	: 15;
+$fz-s	: 14;
+$fz-xs	: 13;
+$fz-xs1	: 12;
+$fz-xs2	: 11;
+
+// ---------------------------
+// colors
+// ---------------------------
+// buttons colors
+$button-colors: (
+    primary: $primary-color, 
+    secondary-light: $secondary-color-light,
+    secondary: $secondary-color,
+    muted: $muted-color
+);
+// text-colors
+$text-colors: (
+    primary: $primary-color, 
+    secondary: $secondary-color, 
+    secondary1: $secondary-color-light,
+    secondary2: $secondary-color-light2,
+    light: $light-color
+);
+// text-sizes
+$text-size: (
+	xl1: $fz-xl1,
+	xl: $fz-xl,
+	l: $fz-l,
+	m1: $fz-m1,
+	m: $fz-m,
+	s: $fz-s,
+	xs: $fz-xs,
+	xs2: $fz-xs1,
+	xs3: $fz-xs2
+);
+// backgrounds
+$backgrounds-colors: (
+    primary: $primary-color, 
+    secondary: $secondary-color, 
+    secondary2: $secondary-color-light2,
+    muted: $muted-color,
+    light: $light-color
+);
+// headers
+$headers-size: (
+	h1: l,
+	h2: l,
+	h3: s,
+	h4: xs,
+	h5: xs2,
+	h6: xs2
+);
+$headers-colors: (
+	h1: primary,
+	h2: primary,
+	h3: primary,
+	h4: primary,
+	h5: primary,
+	h6: primary
+);
+// borders
+$border-color: $grey-dark;
+
+// ---------------------------
+// body
+// ---------------------------
+$body-font-size: 15;
+$body-background-color: $light-color;
+$body-font-family: $ff-primary;
+
+// ---------------------------
+// bootstrap grid
+// ---------------------------
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: $spacer,
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 5)
+), $spacers);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+), $sizes);
+// stylelint-enable
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$enable-grid-classes:       true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1250px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           20px !default;

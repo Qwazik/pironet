@@ -1,0 +1,212 @@
+.main-header.mb-0.mb-md-2
+	.top-panel
+		.container
+			.row.align-items-center.justify-content-between
+				.col-auto: a(href="#").btn.btn-primary 
+					i.fa 
+					span Акции и скидки
+				.col: ul.top-contacts
+					li.top-contacts__item
+						a(href="mailto: info@pirotech.ru").top-contacts__link.text-s
+							i.fa 
+							span info@pirotech.ru
+					
+					li.top-contacts__item
+						a(href="tel: +7(4832)22-28-22").top-contacts__link 
+							i.fa 
+							span +7 (4832) 22-28-22
+
+				.col-auto: a(href="#callbackForm").fancybox.btn.btn-secondary-light Заказать звонок
+				.col: ul.top-nav
+					li.top-nav__item: a(href="#").top-nav__link 
+						i.fa 
+						span Доставка и оплата
+					li.top-nav__item: a(href="#").top-nav__link 
+						i.fa 
+						span Безопасность
+				.col-auto: .top-auth
+					a(href="#").top-auth__item 
+						i.fa.fa-sign-out-alt
+						span Вход
+					a(href="#registerForm").fancybox.top-auth__item.btn.btn-primary 
+						i.fa 
+						span Регистрация
+	.main-header__bottom
+		.container: .row.justify-content-between.align-items-center.align-items-center
+			.col-auto
+				a(href="/").main-logo: img(src="img/logo.png", alt="")
+			.col.col-lg-9
+				.row.justify-content-end.justify-content-md-between.align-items-center
+					.col-auto.flex.align-items-center
+						.header-search
+							input(type="text" placeholder="Поиск...").header-search__input
+							
+							.header-search-drop
+								-for(i=0;i<4;i++)
+									.header-search-drop-item
+										.header-search-drop-item__img: img(src="img/header-cart-item.png", alt="")
+										.header-search-drop-item__info
+											span.header-search-drop-item__name Огненный вихрь
+										span.header-search-drop-item__price 7 228 РУБ
+								.header-cart-drop-item
+									a(href="#").btn.btn-muted-dark Смотреть все (28)
+							button(type="submit").header-search__submit.fa 
+					.col-auto.flex.align-items-center
+						ul.header-nav
+							li.header-nav__item(data-target=".header-nav-drop").js-hover
+								a(href="#" ).header-nav__link Каталог
+								ul.header-nav-drop
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Батареи салютов
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Бенгальские огни
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Комбинированные салюты
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Наземные фейерверки
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Одиночные салюты
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Петарды
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Ракеты
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Римские свечи
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Фонтаны
+									li.header-nav-drop__item: a(href="#").header-nav-drop__link Хлопушки
+							li.header-nav__item
+								a(href="#").header-nav__link Контакты
+							li.header-nav__item
+								a(href="#").header-nav__link О компании
+					.col-auto.flex.align-items-center
+						.header-cart(data-target=".header-cart-drop").js-hover
+							.col-auto
+								.header-cart-ico
+									i.fa 
+									.header-cart-ico__val
+										span 28
+							.col-auto.header-cart__right
+								.header-cart-title Корзина:
+								.header-cart-price 2228
+							.header-cart-drop
+								-for(i=0;i<4;i++)
+									.header-cart-drop-item
+										.header-cart-drop-item__img: img(src="img/header-cart-item.png", alt="")
+										.header-cart-drop-item__info
+											span.header-cart-drop-item__name Огненный вихрь
+											span.header-cart-drop-item__price 7 228 РУБ
+										.header-cart-drop-item__del: i.fa.fa-times
+								.header-cart-drop-item
+									a(href="#").btn.btn-primary В карзину
+					.col-auto.d-md-none
+						.mob-auth
+							.mob-auth__ico.js-click(data-target=".mob-auth-drop"): i.fa 
+							ul.mob-auth-drop
+								.mob-auth-drop__item Вход 
+								.mob-auth-drop__item Регистрация
+.mob-navs-overlay
+.mob-navs
+	.mob-category
+		.mob-category-title
+			i.fa 
+			span Все категории
+		ul.mob-navs-drop
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-1
+					span Батареи салютов
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-2
+					span Бенгальские огни
+					.dd-toggler: i.fa.fa-angle-down
+				ul.mob-navs-drop
+					li.mob-navs-drop-item
+						a(href="#").mob-navs-drop-item__title 
+							i.icm.icon-ln-1
+							span Батареи салютов
+							.dd-toggler: i.fa.fa-angle-down
+					li.mob-navs-drop-item
+						a(href="#").mob-navs-drop-item__title 
+							i.icm.icon-ln-2
+							span Бенгальские огни
+							.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-3
+					span Комбинированные салюты
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-4
+					span Наземные фейерверки
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-5
+					span Одиночные салюты
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-6
+					span Петарды
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-7
+					span Ракеты
+					.dd-toggler: i.fa.fa-angle-down
+			li.mob-navs-drop-item
+				a(href="#").mob-navs-drop-item__title 
+					i.icm.icon-ln-8
+					span Римские свечи
+					.dd-toggler: i.fa.fa-angle-down
+	.mob-navs__right
+		.mob-nav
+			.mob-nav-title 
+				i.fa 
+				span Меню
+			ul.mob-navs-drop
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Главная
+						.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span О компании
+						.dd-toggler: i.fa.fa-angle-down
+					ul.mob-navs-drop
+						li.mob-navs-drop-item
+							a(href="#").mob-navs-drop-item__title 
+								span Батареи салютов
+								.dd-toggler: i.fa.fa-angle-down
+						li.mob-navs-drop-item
+							a(href="#").mob-navs-drop-item__title 
+								span Бенгальские огни
+								.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Контакты
+						.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Каталог
+						.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Безопасность
+						.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Акции и скидки
+						.dd-toggler: i.fa.fa-angle-down
+				li.mob-navs-drop-item
+					a(href="#").mob-navs-drop-item__title 
+						span Доставка и оплата
+						.dd-toggler: i.fa.fa-angle-down
+		form(action="#").mob-search
+			.mob-search-input
+				input(type="text" placeholder="Поиск...")
+				.header-search-drop
+							-for(i=0;i<4;i++)
+								.header-search-drop-item
+									.header-search-drop-item__img: img(src="img/header-cart-item.png", alt="")
+									.header-search-drop-item__info
+										span.header-search-drop-item__name Огненный вихрь
+									span.header-search-drop-item__price 7 228 РУБ
+							.header-cart-drop-item
+								a(href="#").btn.btn-muted-dark Смотреть все (28)
+			.mob-search-btn: .fa 

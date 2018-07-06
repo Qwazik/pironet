@@ -1,0 +1,30 @@
+.product-item
+	.product-item-top
+		img(src="img/product-1.png", alt="")
+		a(href="https://www.youtube.com/watch?v=ryxabBxipiA").product-item-video.fancybox(style="background-image: url(img/video-placeholder.jpg);")
+			.product-item-video__play: .fa 
+			.product-item-video__text Смотреть видео
+	.product-item-body
+		.product-item-buy
+			.set-number
+				button.set-number__btn.dec -
+				input(type="text" value="1" readonly).set-number__input
+				button.set-number__btn.inc +
+			a(href="#").buy-btn 
+				i.fa 
+				span Купить
+		.product-item-info
+			.product-item-info__name Сильвер буллет
+			.product-item-info__price 5 228 РУБ
+		ul.product-item-prop
+			li.product-item-prop__item
+				b 28 
+				span Зарядов
+			li.product-item-prop__item
+				b 1.28 
+				span Калибр
+			li.product-item-prop__item
+				b 22 
+				span Секунд
+			
+			
