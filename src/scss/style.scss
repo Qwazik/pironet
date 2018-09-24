@@ -101,7 +101,7 @@ textarea.input{
 }
 .btn-sm{
     text-transform: uppercase;
-    font-family: $ff-secondary;
+    font-weight: bold;
     font-size: 11px;
     padding: 1.5rem 5rem;
 }
@@ -214,7 +214,7 @@ textarea.input{
 .header-nav{
     display: inline-flex;
     justify-content: space-between;
-    font-family: $ff-secondary;
+    font-weight: bold;
     vertical-align: top;
     height: 100%;
     @extend .ns;
@@ -336,7 +336,7 @@ textarea.input{
         font-size: 1.2rem;
     }
     &-price{
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-weight: bold;
         &:before{
             content: '';
@@ -386,7 +386,7 @@ textarea.input{
                 margin-bottom: .4rem;
             }
             &__price{
-                font-family: $ff-secondary;
+                font-weight: bold;
                 text-transform: uppercase;
                 color: $primary-color;
                 font-weight: bold;
@@ -559,7 +559,7 @@ textarea.input{
     &__title,&__header{
         text-transform: uppercase;
         font-weight: bold;
-        font-family: $ff-secondary;
+        font-weight: bold;
     }
     &__title{
         font-size: fz($fz-s);
@@ -641,7 +641,7 @@ textarea.input{
         transform: skew(45deg) translate(-50%);
         z-index: 2;
         &__val{
-            font-family: $ff-secondary;
+            font-weight: bold;
             font-weight: bold;
             position: absolute;
             top: 30%;
@@ -666,7 +666,7 @@ textarea.input{
     &-text{
         &__name,
         &__price{
-            font-family: $ff-secondary;
+            font-weight: bold;
             font-weight: bold;
         }
         &__name{
@@ -722,7 +722,7 @@ textarea.input{
         margin-bottom: 2rem;
     }
     &-title{
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-size: fz($fz-m1);
         color: $secondary-color;
         letter-spacing: .03rem;
@@ -815,7 +815,7 @@ textarea.input{
 
         text-shadow: 0 2px 5px #000000;
         color: #ffffff;
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-size: 1.2rem;
         text-transform: uppercase;
         opacity: 0;
@@ -865,7 +865,7 @@ textarea.input{
         }
     }
     &-info{
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-weight: bold;
         @extend .product-action-text !optional;
         &__name{
@@ -890,7 +890,7 @@ textarea.input{
         color: $secondary-color-light;
         &__item{
             b{
-                font-family: $ff-secondary;
+                font-weight: bold;
                 color: $secondary-color;
             }
             &:not(:first-child){
@@ -905,7 +905,7 @@ textarea.input{
 /*-------------------------------------------------*/
 .set-number{
     @extend .buy-btn;
-    font-family: $ff-secondary;
+    font-weight: bold;
     padding: 0;
     &:hover{
         background:#fff;
@@ -975,7 +975,7 @@ textarea.input{
         &__header{
             text-transform: uppercase;
             font-size: fz($fz-xl);
-            font-family: $ff-secondary;
+            font-weight: bold;
             margin-bottom: 1rem;
         }
         &__text{
@@ -1081,7 +1081,7 @@ textarea.input{
 
         &-bold{
             font-size: 3.8rem;
-            font-family: $ff-secondary;
+            font-weight: bold;
             font-weight: bold;
             line-height: 1;
             margin-bottom: .5rem;
@@ -1168,7 +1168,7 @@ textarea.input{
 .footer-nav{
     &-title{
         text-transform: uppercase;
-        font-family: $ff-secondary;
+        font-weight: bold;
         margin-bottom: 2.5rem;
     }
     &-list{
@@ -1227,7 +1227,7 @@ textarea.input{
     &-title{
         margin-right: 6rem;
         text-transform: uppercase;
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-size: fz($fz-s);
     }
 
@@ -1272,7 +1272,7 @@ textarea.input{
         text-align: center;
         text-transform: uppercase;
         font-size: 1.6rem;
-        font-family: $ff-secondary;
+        font-weight: bold;
         margin-bottom: 1.7rem;
         line-height: 1;
     }
@@ -1331,7 +1331,7 @@ textarea.input{
     }
     &-title{
         text-transform: uppercase;
-        font-family: $ff-secondary;
+        font-weight: bold;
         margin-bottom: 1rem;
 
     }
@@ -1402,7 +1402,7 @@ textarea.input{
     &-mob{
         font-size: 2rem;
         font-weight: bold;
-        font-family: $ff-secondary;
+        font-weight: bold;
         display: none;
         .fa{
             margin-right: 1rem;
@@ -1412,7 +1412,7 @@ textarea.input{
     .btn{
         width: 100%;
         text-transform: uppercase;
-        font-family: $ff-secondary;
+        font-weight: bold;
         font-size: 1.1rem;
         padding: 1rem 0;
     }
@@ -1581,7 +1581,7 @@ textarea.input{
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 1.2rem;
-        font-family: $ff-secondary;
+        font-weight: bold;
     }
 }
 .card-preview{
@@ -1704,7 +1704,7 @@ textarea.input{
                 font-size: 12px;
                 font-weight: bold;
                 margin-bottom: .5rem;
-                font-family: $ff-secondary;
+                font-weight: bold;
             }
         }
     }
@@ -1723,7 +1723,7 @@ textarea.input{
     text-align: center;
     font-size: 12px;
     font-weight: bold;
-    font-family: $ff-secondary;
+    font-weight: bold;
     .del{
         border: none;
         background: none;
@@ -1789,7 +1789,7 @@ textarea.input{
     &-step{
         height: 6rem;
         background-color: $muted-color;
-        font-family: $ff-secondary;
+        font-weight: bold;
         text-transform: uppercase;
         color: $secondary-color;
         align-items: center;
@@ -1820,7 +1820,7 @@ textarea.input{
 
         &__title{
             text-transform: uppercase;
-            font-family: $ff-secondary;
+            font-weight: bold;
             color: $secondary-color;
             font-size: 11px;
             font-weight: bold;
@@ -1835,7 +1835,7 @@ textarea.input{
                 }
                 &.text-primary{
                     font-weight: bold;
-                    font-family: $ff-secondary;
+                    font-weight: bold;
                 }
             }
         }
@@ -1938,7 +1938,7 @@ textarea.input{
         font-size: 11px;
         &__title{
             text-transform: uppercase;
-            font-family: $ff-secondary;
+            font-weight: bold;
         }
         &__desc{
             color: $secondary-color-light;
@@ -2374,7 +2374,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle{
 
 .h{
     text-transform: uppercase;
-    font-family: $ff-secondary;
+    font-weight: bold;
     color: $secondary-color;
     &-dec{
         &:after{
