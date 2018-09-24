@@ -160,7 +160,7 @@ textarea.input {
 
 .btn-sm {
   text-transform: uppercase;
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   font-size: 11px;
   padding: 1.5rem 5rem; }
 
@@ -279,7 +279,7 @@ textarea.input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   vertical-align: top;
   height: 100%; }
   .header-nav__item {
@@ -399,7 +399,7 @@ textarea.input {
     color: #8a9094;
     font-size: 1.2rem; }
   .header-cart-price {
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-weight: bold; }
     .header-cart-price:before {
       content: '';
@@ -446,7 +446,7 @@ textarea.input {
       .header-cart-drop-item__name, .header-search-drop-item__name {
         margin-bottom: .4rem; }
       .header-cart-drop-item__price, .header-search-drop-item__price {
-        font-family: LatoHeavy, sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         color: #ff6e41;
         font-weight: bold; }
@@ -576,7 +576,7 @@ textarea.input {
   .home-slide__title, .home-slide__header {
     text-transform: uppercase;
     font-weight: bold;
-    font-family: LatoHeavy, sans-serif; }
+    font-weight: bold; }
   .home-slide__title {
     font-size: 1.4rem;
     margin-bottom: 1.5rem; }
@@ -666,7 +666,7 @@ textarea.input {
             transform: skew(45deg) translate(-50%);
     z-index: 2; }
     .product-action-discount__val {
-      font-family: LatoHeavy, sans-serif;
+      font-weight: bold;
       font-weight: bold;
       position: absolute;
       top: 30%;
@@ -691,7 +691,7 @@ textarea.input {
       max-width: 100%;
       max-height: 100%; }
   .product-action-text__name, .product-action-text__price {
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-weight: bold; }
   .product-action-text__name {
     text-transform: uppercase;
@@ -737,7 +737,7 @@ textarea.input {
     padding-bottom: 1.1rem;
     margin-bottom: 2rem; }
   .product-carousel-title {
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-size: 1.7rem;
     color: #2a363f;
     letter-spacing: .03rem; }
@@ -834,7 +834,7 @@ textarea.input {
             flex-direction: column;
     text-shadow: 0 2px 5px #000000;
     color: #ffffff;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-size: 1.2rem;
     text-transform: uppercase;
     opacity: 0;
@@ -884,7 +884,7 @@ textarea.input {
     .product-item-buy .set-number {
       margin-right: .6rem; }
   .product-item-info {
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-weight: bold; }
     .product-item-info__name {
       text-transform: uppercase;
@@ -904,7 +904,7 @@ textarea.input {
     font-size: 1.1rem;
     color: #8a9094; }
     .product-item-prop__item b {
-      font-family: LatoHeavy, sans-serif;
+      font-weight: bold;
       color: #2a363f; }
     .product-item-prop__item:not(:first-child) {
       margin-left: .9rem; }
@@ -913,7 +913,7 @@ textarea.input {
 /*  set number
 /*-------------------------------------------------*/
 .set-number {
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   padding: 0; }
   .set-number:hover {
     background: #fff; }
@@ -972,7 +972,7 @@ textarea.input {
     .action-block-text__header {
       text-transform: uppercase;
       font-size: 2.8rem;
-      font-family: LatoHeavy, sans-serif;
+      font-weight: bold;
       margin-bottom: 1rem; }
     .action-block-text__text {
       font-size: 1.3rem;
@@ -1076,7 +1076,7 @@ textarea.input {
         width: 100vw; }
     .h-features-item-bold {
       font-size: 3.8rem;
-      font-family: LatoHeavy, sans-serif;
+      font-weight: bold;
       font-weight: bold;
       line-height: 1;
       margin-bottom: .5rem; }
@@ -1153,7 +1153,7 @@ textarea.input {
 
 .footer-nav-title {
   text-transform: uppercase;
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   margin-bottom: 2.5rem; }
 
 .footer-nav-list__item {
@@ -1210,7 +1210,7 @@ textarea.input {
   .socials-title {
     margin-right: 6rem;
     text-transform: uppercase;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-size: 1.4rem; }
 
 /*-------------------------------------------------*/
@@ -1246,7 +1246,7 @@ textarea.input {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.6rem;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     margin-bottom: 1.7rem;
     line-height: 1; }
   .modal .btn, .modal .header-search__submit {
@@ -1301,7 +1301,7 @@ textarea.input {
     line-height: 1; }
   .icon-block-title, .catalog-item-title {
     text-transform: uppercase;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     margin-bottom: 1rem; }
   .icon-block-desc, .catalog-item-desc {
     font-size: 1.2rem;
@@ -1358,7 +1358,7 @@ textarea.input {
   .catalog-filter-mob {
     font-size: 2rem;
     font-weight: bold;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     display: none; }
     .catalog-filter-mob .fa {
       margin-right: 1rem;
@@ -1366,7 +1366,7 @@ textarea.input {
   .catalog-filter .btn, .catalog-filter .header-search__submit {
     width: 100%;
     text-transform: uppercase;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     font-size: 1.1rem;
     padding: 1rem 0; }
   .catalog-filter-section {
@@ -1541,7 +1541,7 @@ textarea.input {
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 1.2rem;
-    font-family: LatoHeavy, sans-serif; }
+    font-weight: bold; }
 
 .card-preview-main {
   border: 1px solid #e6eaed;
@@ -1666,7 +1666,7 @@ textarea.input {
       font-size: 12px;
       font-weight: bold;
       margin-bottom: .5rem;
-      font-family: LatoHeavy, sans-serif; }
+      font-weight: bold; }
   .lk-right .btn, .lk-right .header-search__submit {
     width: 100%;
     text-transform: uppercase;
@@ -1680,7 +1680,7 @@ textarea.input {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  font-family: LatoHeavy, sans-serif; }
+  font-weight: bold; }
   .lk-table .del {
     border: none;
     background: none;
@@ -1730,7 +1730,7 @@ textarea.input {
 .cart-step {
   height: 6rem;
   background-color: #f7f7f7;
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   color: #2a363f;
   -webkit-box-align: center;
@@ -1757,7 +1757,7 @@ textarea.input {
     margin-bottom: 1.5rem; }
   .cart-right-prop__title {
     text-transform: uppercase;
-    font-family: LatoHeavy, sans-serif;
+    font-weight: bold;
     color: #2a363f;
     font-size: 11px;
     font-weight: bold; }
@@ -1769,7 +1769,7 @@ textarea.input {
         text-decoration: line-through; }
       .cart-right-prop__val span.text-primary, .cart-right-prop__val span.h1, .cart-right-prop__val span.h2, .cart-right-prop__val span.h3, .cart-right-prop__val span.h4, .cart-right-prop__val span.h5, .cart-right-prop__val span.h6 {
         font-weight: bold;
-        font-family: LatoHeavy, sans-serif; }
+        font-weight: bold; }
   .cart-right .btn, .cart-right .header-search__submit {
     width: 100%;
     padding-left: 0;
@@ -1868,7 +1868,7 @@ textarea.input {
   font-size: 11px; }
   .radio-text__title {
     text-transform: uppercase;
-    font-family: LatoHeavy, sans-serif; }
+    font-weight: bold; }
   .radio-text__desc {
     color: #8a9094; }
 
@@ -2277,7 +2277,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .h {
   text-transform: uppercase;
-  font-family: LatoHeavy, sans-serif;
+  font-weight: bold;
   color: #2a363f; }
   .h-dec:after {
     content: '';
